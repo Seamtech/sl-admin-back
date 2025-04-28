@@ -4,7 +4,7 @@ dotenv.config();
 import app from './app';
 
 const port = Number(process.env.PORT) || 3000;
-const env = process.env.NODE_ENV;
+const env = process.env.NODE_ENV || 'production';
 const host = process.env.HOST || 'localhost';
 
 const start = async () => {

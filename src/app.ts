@@ -12,7 +12,7 @@ import fastifySwagger from '@fastify/swagger';
 import fastifySwaggerUi from '@fastify/swagger-ui';
 import { ingestionRoutes } from './routes/ingestion.routes';
 
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 const isDev = env === 'development';
 
 const app = Fastify({
